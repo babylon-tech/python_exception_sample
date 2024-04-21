@@ -7,6 +7,7 @@ def word_counts(file_path, word):
 
     f = open(file_path)
     c = f.read().count(word)
+    # close()の前でエラーが発生すると・・・
     f.close()
 
     return c
